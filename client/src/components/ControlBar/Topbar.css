@@ -1,0 +1,164 @@
+.topbar {
+    display: none;
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.x7gH {
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.x7gH__container,
+.topbarContainer {
+    box-shadow: 0 0 7px -3px #737373;
+    border-radius: 14px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    background-color: rgba(250, 250, 250);
+}
+
+.x7gH__inputEntity {
+    align-items: center;
+    display: flex;
+}
+
+.x7gH__searchIcon {
+    fill: #737373;
+    margin-right: 7px;
+    width: 12px;
+}
+
+.x7gH__input {
+    background-color: transparent;
+    border: none;
+    color: #737373;
+    font-size: 12px;
+    outline: none;
+}
+
+.x7gH__group {
+    align-items: center;
+    display: flex;
+}
+
+.x7gH__menuIcon {
+    width: 16px;
+}
+
+.x7gH__menuIcon {
+    cursor: pointer;
+    fill: #404040;
+}
+
+.x7gH__menuIcon svg {
+    align-items: center;
+    display: flex;
+}
+
+.QwO7 {
+    display: block;
+    width: 18px;
+}
+
+.menuDrawer svg,
+.x7gH__filterIcon svg {
+    align-items: center;
+    display: flex;
+}
+
+.x7gH__logo {
+    margin-right: 14px;
+}
+
+.x7gH__logo,
+.gtp1__logo {
+    width: 150px;
+}
+
+.menu {
+    display: none
+}
+
+.menuList {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.topbarLogo {
+    align-items: center;
+    display: flex;
+    width: 160px;
+    position: relative;
+}
+
+.shareIcon,
+.starIcon {
+    height: 14px;
+    margin-right: 7px;
+    width: 14px;
+}
+
+.donateIcon {
+    height:  14px;
+    margin-right: 7px;
+    width: 18px;
+}
+
+.controlMenuLink {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.x7gH__filterToggle {
+    align-items: center;
+    border: 1px solid #737373;
+    cursor: pointer;
+    color: #737373;
+    display: flex;
+    font-size: 8px;
+    justify-content: center;
+    height: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 50px;
+}
+
+.x7gH__searchFilterContainer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 14px;
+    height: 0;
+}
+
+.x7gH__searchFilterContainer.active {
+    overflow: visible;
+}
+
+@media only screen and (min-width: 1200px) {
+    .menu {
+        display: block;
+    }
+
+    .menuDrawer {
+        display: none;
+    }
+
+    .topbar {
+        display: block;
+    }
+
+    .x7gH {
+        display: none;
+    }
+}

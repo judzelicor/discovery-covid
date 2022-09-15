@@ -1,0 +1,104 @@
+.caseItem {
+    background-color: rgb(250, 250, 250);
+    border-radius: 14px;
+    color: #404040;
+    cursor: pointer;
+    transition: 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.totalCount {
+    color: inherit;
+    font-size: 24px;
+    font-family: "General Sans";
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.totalCases.active,
+.caseItem.totalCases:hover {
+    box-shadow: 0 0 0 1px #F97316;
+}
+
+.totalVaccinations.active,
+.caseItem.totalVaccinations:hover {
+    box-shadow: 0 0 0 1px #8b5cf6;
+}
+
+.totalDeaths.active,
+.caseItem.totalDeaths:hover {
+    box-shadow: 0 0 0 1px #404040;
+}
+
+.totalRecoveries.active,
+.caseItem.totalRecoveries:hover {
+    box-shadow: 0 0 0 1px #10b981;
+}
+
+.caseCard {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    width: 100%;
+}
+
+.caseCardTitle {
+    color: #737373;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.informationbarWrapper {
+    padding: 0 25px;
+}
+
+.totalCases.active {
+    color: #ef4444;
+}
+
+.totalVaccinations.active {
+    color: #8b5cf6;
+}
+
+.totalDeaths.active {
+    color: #404040;
+}
+
+.totalRecoveries.active {
+    color: #10b981;
+}
+
+.cases {
+    display: none;
+    gap: 20px;
+}
+
+.caseItem:nth-of-type(1) {
+    flex-grow: 2;
+}
+
+.caseItem:nth-of-type(2) {
+    flex-grow: 3;
+}
+
+.caseItem:nth-of-type(3) {
+    flex-grow: 1;
+}
+
+.caseItem:nth-of-type(4) {
+    flex-grow: 3;
+}
+
+.statisticButton {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .cases {
+        display: flex;
+    }
+}

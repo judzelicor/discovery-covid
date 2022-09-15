@@ -1,0 +1,13 @@
+.controlBar {
+    position: relative;
+}
+
+.controlBarWrapper {
+    max-width: 940px;
+    z-index: 1002;
+    left: 50%;
+    padding-top: 25px;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+}

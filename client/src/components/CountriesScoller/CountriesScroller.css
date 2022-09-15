@@ -1,0 +1,129 @@
+.countriesContainer {
+    overflow: hidden;
+    width: 100%;
+}
+
+.countryListItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: 60px;
+    cursor: pointer;
+    transition: 500ms cubic-bezier(0.22, 1, 0.36, 1);
+    padding-left: 14px;
+}
+
+.countryListItem:hover {
+    background-color: rgb(167, 139, 250, 0.15);
+    box-shadow: 0 0 0 1px #a78bfa;
+}
+
+.countriesWrapper {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.countriesList {
+    padding-top: 3px;
+    padding-bottom: 100px;
+}
+
+.countryRank {
+    color: #737373;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f5f5f5;
+    font-size: 9px;
+    font-weight: 500;
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    margin-right: 7px;
+}
+
+.countryFlag {
+    width: 28px;
+    margin-right: 7px;
+}
+
+.countryName {
+    align-items: center;
+    display: flex;
+    color: #404040;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.countriesListHeader {
+    align-items: center;
+    display: flex;
+    padding-left: 14px;
+}
+
+.countryListHeaderTitle {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.locationPinIcon {
+    fill: #9ca3af;
+    margin-right: 4px;
+    width: 12px;
+}
+
+.activeStatisticValue {
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 14px;
+    display: flex;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.activeStatisticValue.total_cases {
+    color: #ef4444;
+}
+
+.activeStatisticValue.total_vaccinations {
+    color: #8b5cf6;
+}
+
+.activeStatisticValue.total_deaths {
+    color: #404040;
+}
+
+.activeStatisticValue.total_recoveries {
+    color: #10b981;
+}
+
+.mCS1 {
+    display: block;
+    background-color: #f5f5f5;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: 0;
+    overflow: hidden;
+    transition: 300ms cubic-bezier(0.87, 0, 0.13, 1);
+    z-index: 1001;
+}
+
+.mCS1__container {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.mCS1.active {
+    height: 100%;
+    width: calc(100% + 30px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width:1200px) {
+    .mCS1 {
+        display: none;
+    }
+}

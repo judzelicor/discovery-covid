@@ -1,0 +1,11 @@
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .dashboardGrid {
+        grid-template-columns: 320px 1fr;
+    }
+}

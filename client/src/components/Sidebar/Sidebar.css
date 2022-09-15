@@ -1,0 +1,194 @@
+.sidebar {
+    background-color: #f5f5f5;
+    display: none;
+    height: 100%;
+    width: 0%;
+}
+
+.sidebarGroup {
+    padding: 25px 14px 0 14px;
+    width: 320px;
+}
+
+.sidebarContainer {
+    height: 100%;
+    position: relative;
+    width: 320px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.buttonsList {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 94px 1fr;
+    grid-gap: 12px;
+    height: 42px;
+    margin-bottom: 14px;
+}
+
+.globeIcon {
+    height: 14px;
+    margin-right: 7px;
+    width: 14px;
+}
+
+.sidebarButton {
+    align-items: center;
+    background-color: var(--bg-sidebar-interactive);
+    border-radius: 14px;
+    border: 1px solid #E5E5E5;
+    color: var(--fg-sidebar-interactive);
+    display: flex;
+    fill: var(--fill-sidebar-icon);
+    height: 100%;
+    padding: 0 12px;
+    transition: 300ms cubic-bezier(0.22, 1, 0.36, 1);
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.sidebarButtonText {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.sidebarInteractiveItem {
+    height: 100%;
+    position: relative;
+}
+
+.orderIcon,
+.filterIcon {
+    height: 15px;
+    margin-right: 7px;
+    width: 15px;
+}
+
+.searchCountryForm {
+    align-items: center;
+    background-color: var(--bg-sidebar-interactive);
+    border: 1px solid #E5E5E5;
+    border-radius: 14px;
+    display: flex;
+    height: 100%;
+    padding-left: 18px;
+    position: relative;
+    transition: 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.searchCountryForm:hover,
+.sidebarButton:hover {
+    box-shadow: 0 0 0 1px #404040;
+}
+
+.searchBarInput {
+    background-color: transparent;
+    border: none;
+    color: var(--fg-sidebar-interactive);
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+    height: 100%;
+    padding-left: 24px;
+    width: 100%;
+}
+
+.searchIcon {
+    display: block;
+    fill: var(--fill-sidebar-icon);
+    margin-right: 7px;
+    position: absolute;
+    width: 12px;
+}
+
+.sidebarMenuIcon {
+    height: 18px;
+    position: relative;
+    width: 18px;
+    cursor: pointer;
+}
+
+.logoContainer {
+    width: 250px;
+}
+
+.sidebarMenuIcon::before {
+    content: "";
+    position: absolute;
+    height: 180%;
+    background-color: #F6F6F6;
+    border: 1px solid #404040;
+    border-radius: 100px;
+    width: 180%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+    top: 50%;
+    left: 50%;
+    transition: 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sidebarMenuIcon:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.sidebarHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.dropdown {
+    border: 1px solid #404040;
+    background-color: #f6f6f6;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    height: 210px;
+    z-index: 9;
+    margin-top: -25px;
+    max-height: 0;
+}
+
+.filterButton:hover .dropdown {
+    max-height: 210px;
+}
+
+.dropdownBody {
+    padding-top: 32px;
+}
+
+.dropdownItem {
+    cursor: pointer;
+    padding: 14px;
+}
+
+.dropdownItem:hover {
+    background-color: rgb(167, 139, 250, 0.15);
+    box-shadow: 0 0 0 1px #a78bfa;
+}
+
+.dropdownSelectButton {
+    text-align: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .sidebar {
+        display: block;
+        width: 100%;
+    }
+}
