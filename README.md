@@ -5,3 +5,11 @@ Discovery Covid is a personal project of mine that I've started during the pande
 ## Current State
 
 I have taken down the website as we are at the declining phase of COVID-19 and the conditions are stabilizing, at least that's the case for Canada. I wanted to host the website because I think it still holds useful information but I will do so after I do some refactoring to the backend and after setuping up my new VPS.
+
+## Features
+
+✅ Allow visitors to see relevant news surrounding COVID-19 in a separate page.
+
+✅ Advanced filtering of data such as sorting data based on a particular statistic like deaths, vaccination count, recovery count, and total cases.
+
+✅ Visualize data of every region in a slug page.
