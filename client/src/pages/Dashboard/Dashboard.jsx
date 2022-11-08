@@ -22,8 +22,9 @@ class Dashboard extends React.Component {
             method: "GET",
             url: "/api/statistics/world",
         }).then(response => {
-            const { loadWorldSummaryStatistics } = this.props;
             console.log(response.data)
+            const { loadWorldSummaryStatistics } = this.props;
+
             loadWorldSummaryStatistics(response.data.summary)
         })
     }

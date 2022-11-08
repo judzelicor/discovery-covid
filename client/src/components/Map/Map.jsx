@@ -19,6 +19,8 @@ class Map extends React.PureComponent {
             active_statistic
         } = this.props;
 
+        console.log(countries)
+
         const fillColors = {
             total_cases: "#ef4444",
             total_vaccinations: "#8b5cf6",
@@ -26,12 +28,12 @@ class Map extends React.PureComponent {
             total_recoveries: "#10b981"
         }
 
-        if (countries && countries.length > 0) {
+        if (true) {
             return (
                 <React.Fragment>
                     <div className="map">
                         <ControlBar />
-                        <MapContainer 
+                        <MapContainer
                             style={{ height: "100%", width: "100%" }}
                             maxBounds={ maxBounds }
                             center={[51.505, -0.09]}

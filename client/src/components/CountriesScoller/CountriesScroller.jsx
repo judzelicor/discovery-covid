@@ -21,6 +21,7 @@ class CountriesScroller extends React.PureComponent {
         })
         .then(response => {
             const { updateCountries } = this.props;
+            console.log(response.data)
             updateCountries(response.data.countries);
         })
     }
