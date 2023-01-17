@@ -6,6 +6,17 @@ Discovery Covid is a personal project of mine that I've started during the pande
 
 I have taken down the website as we are at the declining phase of COVID-19 and the conditions are stabilizing, at least that's the case for Canada. I wanted to host the website because I think it still holds useful information but I will do so after I do some refactoring to the backend and after setuping up my new VPS.
 
+## Screenshots
+### Desktop View - Light Mode
+![](./docs/images/sc-desktop-view.png)
+
+### Mobile View - Light Mode
+![](./docs/images/sc-mobile-view.png)
+
+
+### Mobile View - Search Option - Light Mode
+![](./docs/images/sc-mobile-view-search.png)
+
 ## Features
 
 ✅ Allow visitors to see relevant news surrounding COVID-19 in a separate page.

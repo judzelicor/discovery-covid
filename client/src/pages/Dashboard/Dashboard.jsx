@@ -20,11 +20,11 @@ class Dashboard extends React.Component {
     componentDidMount() {
         axios({
             method: "GET",
-            url: "/api/statistics/world",
+            url: "/api/v1/statistics/worldwide",
         }).then(response => {
-            console.log(response.data)
-            const { loadWorldSummaryStatistics } = this.props;
 
+            const { loadWorldSummaryStatistics } = this.props;
+            console.log(response.data.summary, "HELLLOOOO")
             loadWorldSummaryStatistics(response.data.summary)
         })
     }

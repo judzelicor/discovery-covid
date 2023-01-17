@@ -17,12 +17,12 @@ class CountriesScroller extends React.PureComponent {
 
         axios({
             method: "GET",
-            url: `/api/countries/${ active_statistic }/${ orderBy }`,
+            url: `/api/v1/countries/${ active_statistic }/${ orderBy }`,
         })
         .then(response => {
             const { updateCountries } = this.props;
             console.log(response.data)
-            updateCountries(response.data.countries);
+            updateCountries(response.data);
         })
     }
 

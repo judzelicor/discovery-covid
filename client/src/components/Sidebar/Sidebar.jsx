@@ -33,7 +33,7 @@ class Sidebar extends React.PureComponent {
 
                 axios({
                     method: "GET",
-                    url: `/api/countries/${ statistic }/${ orderBy }`,
+                    url: `/api/v1/countries/${ statistic }`,
                 })
                 .then(response => {
                     const { updateCountries } = this.props;
@@ -49,33 +49,33 @@ class Sidebar extends React.PureComponent {
 
                 return;
 
-            case "orderBy":
-                if (orderBy === "DESC") {
-                    updateOrder("ASC")
-                    axios({
-                        method: "GET",
-                        url: `/api/countries/${ active_statistic }/ASC`,
-                    })
-                    .then(response => {
-                        const { updateCountries } = this.props;
+            // case "orderBy":
+            //     if (orderBy === "DESC") {
+            //         updateOrder("ASC")
+            //         axios({
+            //             method: "GET",
+            //             url: `/api/countries/${ active_statistic }/ASC`,
+            //         })
+            //         .then(response => {
+            //             const { updateCountries } = this.props;
                         
-                        updateCountries(response.data.countries);
-                    })
-                }
+            //             updateCountries(response.data.countries);
+            //         })
+            //     }
 
-                else {
-                    updateOrder("DESC")
-                    const { active_statistic, orderBy } = this.props;
-                    axios({
-                        method: "GET",
-                        url: `/api/countries/${ active_statistic }/DESC`,
-                    })
-                    .then(response => {
-                        const { updateCountries } = this.props;
+            //     else {
+            //         updateOrder("DESC")
+            //         const { active_statistic, orderBy } = this.props;
+            //         axios({
+            //             method: "GET",
+            //             url: `/api/v1/countries/${ active_statistic }/DESC`,
+            //         })
+            //         .then(response => {
+            //             const { updateCountries } = this.props;
                         
-                        updateCountries(response.data.countries);
-                    })
-                }
+            //             updateCountries(response.data.countries);
+            //         })
+            //     }
 
                 return;
         }
